@@ -27,6 +27,8 @@ vars:
 models:
   jaffle_shop:
     staging:
+      +database: open
       +materialized: view
     marts:
+      +database: mart
       +materialized: table
